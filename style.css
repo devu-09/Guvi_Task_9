@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding:0;
+    
+}
+
+.main{
+    background: url(./pexels-tima-miroshnichenko-5912576.jpg);
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover ;
+}
+
+.main2
+{
+    background: url(./1920x1080-light-sky-blue-solid-color-background.jpg);
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover ;  
+}
+
+.shape{
+    -webkit-transform: skewY(10deg);
+    -moz-transform: skewY(10deg);
+    -ms-transform: skewY(10deg);
+    -o-transform: skewY(10deg);
+    transform: skewY(-10deg);
+}
+
+.main:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-10deg);
+}
+
+.main2:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: left top;
+    transform: skewY(-10deg);
+}
+
+/*.shape1{
+    -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+}*/
+
+.second
+{
+    transform: skewY(-10deg);
+}
+
+.second2{
+    font-size: 30px;
+    width: 800px;
+}
+.slant p{
+    transform: skewY(10deg);
+}
+
+.image{
+    opacity: 0.2;
+}
+
+.one{
+    background-color: black;
+}
+
+.two{
+    background-color: blanchedalmond;
+}
+
+.three{
+    background-color: blue;
+}
+
+.four{
+    background-color: brown;
+}
+.five{
+    background-color: cadetblue;
+}
+
+.last p{
+    font-size: 20px;
+}
+
+.last1{
+    width: 800px;
+}
+
+.bor{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 575.98px) { 
+    .second2{
+        font-size: 3px;
+        width: 70px;
+    }
+    .main{
+        height: 100px;
+    }
+    .bor{
+        display: flex;
+        gap: 5px;
+        font-size: 3px;
+    }
+ }
+
+
+@media (max-width: 767.98px) {
+    .second2{
+        font-size: 11px;
+        width: 200px;
+    }
+    .main{
+        height: 300px;
+    }
+    .bor{
+        display: flex;
+        gap: 10px;
+        font-size: 11px;
+    }
+ }
+
+
+@media (max-width: 991.98px) { 
+    .second2{
+        font-size: 13px;
+        width: 400px;
+    }
+    .main{
+        height: 400px;
+    }
+    .bor{
+        display: flex;
+        gap: 20px;
+        font-size: 13px;
+    }
+ }
+
+
